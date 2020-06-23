@@ -1,0 +1,65 @@
+:root {
+  --primary-text-color: #212121;
+  --activ-color: #2196f3;
+  --text-white-color: #ffffff;
+  --secondary-text-color: #757575;
+  --main-width: 1600px;
+}
+.studio-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primary-text-color);
+}
+.portfolio {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primary-text-color);
+}
+.contacts-activ {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--activ-color);
+}
+.contacts-activ::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--activ-color);
+}
+.conteiner-header {
+  border-bottom: 1px solid #ececec;
+}
+/* MAIN */
+.main-block a {
+  display: block;
+}
+.main-block img {
+  display: block;
+}
+.main-block {
+  width: 600px;
+  height: 800px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+}
+.block__1 {
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+  outline: 1px solid black;
+}
+.block__2 {
+  background-color: chartreuse;
+  width: 100%;
+  height: 100px;
+  outline: 1px solid black;
+}

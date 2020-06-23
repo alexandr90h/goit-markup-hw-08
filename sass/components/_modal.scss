@@ -1,0 +1,210 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  padding: 40px;
+  background-color: $text-white-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: black;
+  background: $text-white-color;
+  outline: 0;
+  outline-offset: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $activ-color;
+  }
+}
+.close-button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
+}
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.form-modal b {
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.input-field {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  margin: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-modal textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+.form-modal button {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  background: $activ-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $text-white-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+.input-box {
+  position: relative;
+  display: block;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 28px;
+  padding: 0;
+  color: $primary-text-color;
+}
+.input-box svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 11px;
+  left: 16px;
+  fill: currentColor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-box label {
+  position: absolute;
+  left: 42px;
+  top: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-box.coment-box {
+  margin-bottom: 20px;
+}
+.input-box textarea + label {
+  left: 16px;
+}
+.input-field:focus ~ svg,
+.input-field:not(:placeholder-shown) ~ svg {
+  color: $activ-color;
+}
+.input-field:focus + .label-text,
+.input-field:not(:placeholder-shown) ~ .label-text {
+  top: -17px;
+  left: 16px;
+  color: $activ-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.input-field:focus {
+  border: 1px solid $activ-color;
+}
+.checkbox-box {
+  position: relative;
+  display: block;
+}
+.checkbox-label {
+  padding-left: 23px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  user-select: none;
+}
+.checkbox-label a {
+  text-decoration: underline;
+  color: $activ-color;
+}
+.checkbox-label input:checked,
+.checkbox-label input:not(:checked) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.checkbox-label svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 15px;
+  height: 15px;
+  fill: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-label input:checked + svg {
+  background-color: $activ-color;
+  border: none;
+}

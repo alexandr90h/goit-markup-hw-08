@@ -1,0 +1,58 @@
+.hero-section {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+.conteiner-hero {
+  padding: 200px 0;
+}
+.hero-text {
+  width: 646px;
+  height: 104px;
+  margin: 0 auto;
+  padding: 0;
+  color: $text-white-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*BUTTON-LINK*/
+.order-service {
+  width: 200px;
+  display: block;
+  padding: 10px 0;
+  border-radius: 4px;
+  border: 2px;
+  margin-top: 46px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $text-white-color;
+  background-color: $activ-color;
+  transition: $main-transition;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+}
