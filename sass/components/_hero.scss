@@ -8,23 +8,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  // padding: 118px 60px;
   margin-left: auto;
   margin-right: auto;
 }
-.conteiner-hero {
-  padding: 200px 0;
-}
+// .conteiner-hero {
+//   padding: 200px 0;
+// }
 .hero-text {
-  width: 646px;
-  height: 104px;
+  max-width: 360px;
+  // width: 646px;
   margin: 0 auto;
   padding: 0;
   color: $text-white-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include main-font(900, 26px, 1.62);
+  // @include main-font(900, 44px, 1.36);
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -40,16 +40,12 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  text-align: center;
+  // text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: $text-white-color;
   background-color: $activ-color;
   transition: $main-transition;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
+  @include main-font(bold, 16px, 1.87);
   letter-spacing: 0.06em;
   &:hover,
   &:focus {

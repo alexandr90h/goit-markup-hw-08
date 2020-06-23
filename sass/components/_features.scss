@@ -1,62 +1,40 @@
-.features-section {
-  padding-top: 95px;
-  background-color: $text-white-color;
-}
 .conteiner-features {
-  width: 1170px;
-  padding-bottom: 95px;
+  padding: 60px 15px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #ececec;
 }
-.features-section ul {
-  display: flex;
+.conteiner-features ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.features-section svg {
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  display: block;
-  width: 270px;
-  height: 120px;
-}
 
-.icon-antenna svg {
-  padding: 25px 102.3px;
+.conteiner-features svg {
+  width: 70px;
+  height: 70px;
 }
-.icon-vector svg {
-  padding: 25px 101.54px;
-}
-.icon-diagram svg {
-  padding: 33px 100px;
-}
-.icon-astronaut svg {
-  padding: 25px 100px;
+.icon-block {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #f5f4fa;
+  text-align: center;
+  border-radius: 4px;
 }
 .features-section li:not(:first-child) {
-  margin-left: 30px;
+  margin-top: 30px;
 }
 .features-section h2 {
   margin-top: 30px;
   margin-bottom: 10px;
   color: $primary-text-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  text-align: center;
+  @include main-font(700, 14px, 1.14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .features-section p {
   margin: 0;
   color: $secondary-text-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include main-font(400, 14px, 1.71);
   letter-spacing: 0.03em;
 }

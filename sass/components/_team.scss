@@ -1,35 +1,37 @@
 .team-section {
   background-color: #f5f4fa;
   margin: 0;
-  padding: 94px 0;
-}
-.conteiner-team {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
+    padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .team-section ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
+margin: 0;
   padding: 0;
-  display: flex;
   list-style-type: none;
 }
+.team-title {
+  margin: 0;
+  color: $primary-text-color;
+  @include main-font(bold, 28px, 1.17);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .team-item {
-  width: 270px;
-  height: 422px;
+    display: block;
+    text-align: center;
   background-color: #f5f4fa;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
+    margin-top: 30px;
+    padding-bottom: 24px;
 }
 .team-item img {
   display: block;
 }
 .team-item ul {
+    display: flex;
   padding: 0;
   width: 207px;
   margin-top: 0;
@@ -46,6 +48,11 @@
   padding: 0;
   color: #afb1b8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $activ-color;
+    color: $text-white-color;
+  }
 }
 .team-item svg {
   display: block;
@@ -57,31 +64,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .team-item li:not(:first-child) {
   margin-left: 11px;
-}
-.team-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: $primary-text-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 .team-item h3 {
   margin: 0;
   margin-top: 30px;
   color: $primary-text-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include main-font(500, 16px, 1.19);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -89,16 +79,7 @@
   margin-top: 10px;
   margin-bottom: 16px;
   color: $secondary-text-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+  @include main-font(400, 16px, 1.19);
   text-align: center;
   letter-spacing: 0.03em;
-}
-.team-item a:hover,
-.team-item a:focus {
-  background-color: $activ-color;
-  color: $text-white-color;
 }

@@ -1,58 +1,55 @@
-.activity-section {
-  background-color: $text-white-color;
-  padding-top: 95px;
-  padding-bottom: 95px;
+.activity-section{
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 }
-.conteiner-activity {
-  width: 1170px;
-  margin: 0 auto;
-}
-.conteiner-activity img {
-  display: block;
-  width: 370px;
-  border-radius: 4px;
-}
-.conteiner-activity ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.activity-section li {
-  position: relative;
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
-}
-.activity-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: $primary-text-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.activity-section h3 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  border-radius: 0 0 4px 4px;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: $text-white-color;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1, 14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+// .activity-section {
+//   background-color: $text-white-color;
+//   padding-top: 95px;
+//   padding-bottom: 95px;
+// }
+// .conteiner-activity {
+//   width: 1170px;
+//   margin: 0 auto;
+// }
+// .conteiner-activity img {
+//   display: block;
+//   width: 370px;
+//   border-radius: 4px;
+// }
+// .conteiner-activity ul {
+//   display: flex;
+//   padding: 0;
+//   margin: 0;
+//   list-style-type: none;
+// }
+// .activity-section li {
+//   position: relative;
+//   &:not(:first-child) {
+//     margin-left: 30px;
+//   }
+// }
+// .activity-title {
+//   margin-top: 0;
+//   margin-bottom: 50px;
+//   color: $primary-text-color;
+//   @include main-font(700, 36px, 1.17);
+//   text-align: center;
+//   letter-spacing: 0.03em;
+// }
+// .activity-section h3 {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   margin: 0;
+//   padding-top: 27px;
+//   padding-bottom: 27px;
+//   border-radius: 0 0 4px 4px;
+//   background-color: rgba(47, 48, 58, 0.8);
+//   color: $text-white-color;
+//   @include main-font(700, 14px, 1.14);
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }

@@ -2,4 +2,11 @@ $primary-text-color: #212121;
 $activ-color: #2196f3;
 $text-white-color: #ffffff;
 $secondary-text-color: #757575;
-$main-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@mixin main-font($weight, $size, $height) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
