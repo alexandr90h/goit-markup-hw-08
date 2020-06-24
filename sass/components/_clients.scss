@@ -4,7 +4,39 @@
 .client-title {
   text-align: center;
   margin: 0;
+  margin-bottom: 30px;
   @include main-font(bold, 28, 1.17);
 }
 .client-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: -15px;
+  list-style: none;
+}
+.client-item {
+  flex-basis: calc(((100%-30px) - 4 * 15px) / 2);
+  margin: 15px;
+  height: 90px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border-color: $activ-color;
+    color: $activ-color;
+  }
+}
+.client-item a {
+  display: block;
+  height: inherit;
+  color: inherit;
+}
+.client-item svg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: currentColor;
 }
