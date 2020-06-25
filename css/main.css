@@ -172,7 +172,7 @@ a {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -302,13 +302,17 @@ a {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.text-checkbox-label {
+  display: inline-block;
 }
 
 .checkbox-label a {
@@ -331,9 +335,10 @@ a {
 .checkbox-label svg {
   position: absolute;
   top: 50%;
+  left: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  display: block;
+  display: inline-block;
   width: 15px;
   height: 15px;
   fill: white;

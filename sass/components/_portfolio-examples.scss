@@ -1,8 +1,7 @@
 /*BUTTON*/
 .examples-works {
   align-items: center;
-  padding-top: 93px;
-  padding-bottom: 93px;
+  padding: 60px 15px;
   border-top: 1px solid #ececec;
   margin-left: auto;
   margin-right: auto;
@@ -11,23 +10,23 @@
   list-style-type: none;
 }
 .conteiner-button {
-  width: 630px;
-  height: 54px;
+  // width: 630px;
+  // height: 54px;
   margin-left: auto;
   margin-right: auto;
 }
 .conteiner-button ul {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 .conteiner-button h1 {
   margin: 0 auto;
 }
-.conteiner-button li:not(:first-child) {
-  margin-left: 8px;
-}
+// .conteiner-button li:not(:first-child) {
+//   margin-left: 8px;
+// }
 .all,
 .all-site,
 .app,
@@ -35,6 +34,8 @@
 .marketing {
   height: 38px;
   padding: 6px 22px;
+  margin-bottom: 21px;
+  margin-right: 8px;
   border-radius: 4px;
   border: 1px solid #f5f4fa;
   background: #f5f4fa;
@@ -68,15 +69,15 @@
 }
 /*PORTFOLIO*/
 .conteiner-examples {
-  margin-top: 50px;
+  margin-top: 19px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
 }
 .conteiner-examples img {
   display: block;
-  width: 370px;
-  height: 294px;
+  // width: 370px;
+  // height: 294px;
 }
 .image-cart {
   position: relative;
@@ -112,14 +113,15 @@
   border-right: 1px solid #eeeeee;
 }
 .conteiner-examples ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin: -15px;
   padding: 0;
+  margin: 0;
 }
 .conteiner-examples li {
-  width: 370px;
-  margin: 15px;
+  // width: 370px;
+  // margin: 15px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {

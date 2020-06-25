@@ -62,7 +62,7 @@
 }
 .form-modal b {
   margin-bottom: 30px;
-  @include main-font(bold, 20px, 1.15);
+  @include main-font(bold, 20px, 1.5);
   text-align: center;
   letter-spacing: 0.03em;
   color: $primary-text-color;
@@ -156,9 +156,12 @@
 }
 .checkbox-label {
   padding-left: 23px;
-  @include main-font(normal, 14px, 1.71);
+  @include main-font(normal, 12px, 1.17);
   letter-spacing: 0.03em;
   user-select: none;
+}
+.text-checkbox-label {
+  display: inline-block;
 }
 .checkbox-label a {
   text-decoration: underline;
@@ -178,8 +181,9 @@
 .checkbox-label svg {
   position: absolute;
   top: 50%;
+  left: 0px;
   transform: translateY(-50%);
-  display: block;
+  display: inline-block;
   width: 15px;
   height: 15px;
   fill: white;
