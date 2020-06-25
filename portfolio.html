@@ -18,40 +18,57 @@
   <body>
     <header>
       <div class="conteiner-header">
-        <nav class="navigation">
-          <a class="logo" href="./index.html"
-            ><span class="logo-web">Web</span> Studio</a
-          >
+        <a class="logo" href="./index.html"
+          ><span class="logo-web">Web</span> Studio</a
+        >
+        <button
+          class="menu-button"
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <svg class="icon-menu-close" width="40px" height="40px">
+            <use
+              class="icon-cross"
+              href="./images/svg-sprite.svg#icon-cross"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/svg-sprite.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+        <nav class="navigation" data-menu>
           <ul class="navigation-link">
             <li class="item">
-              <a class="studio-link" href="./index.html">Студия</a>
+              <a class="studio-link-activ" href="./index.html">Студия</a>
             </li>
             <li class="item">
-              <a class="portfolio-activ" href="./portfolio.html">Портфолио</a>
+              <a class="portfolio" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="item">
-              <a class="contacts" href="">Контакты</a>
+              <a class="contacts" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="contacts-list">
+            <li class="mail-link">
+              <a href="">
+                <svg class="icon-mail" width="16px" height="12px">
+                  <use href="./images/svg-sprite.svg#icon-mail"></use>
+                </svg>
+                <span>info@devstudio.com</span>
+              </a>
+            </li>
+            <li class="tell-link">
+              <a href="">
+                <svg class="icon-phone" width="10px" height="15px">
+                  <use href="./images/svg-sprite.svg#icon-phone"></use>
+                </svg>
+                <span>+38 096 111 11 11</span>
+              </a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts-list">
-          <li class="mail-link">
-            <a href="">
-              <svg class="icon-mail" width="16px" height="12px">
-                <use href="./images/svg-sprite.svg#icon-mail"></use>
-              </svg>
-              <span>info@devstudio.com</span>
-            </a>
-          </li>
-          <li class="tell-link">
-            <a href="">
-              <svg class="icon-phone" width="10px" height="15px">
-                <use href="./images/svg-sprite.svg#icon-phone"></use>
-              </svg>
-              <span>+38 096 111 11 11</span>
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -292,5 +309,21 @@
         </svg>
       </a>
     </div> -->
+    <script>
+      (() => {
+        const menuBtnRef = document.querySelector('[data-menu-button]');
+        const mobileMenuRef = document.querySelector('[data-menu]');
+
+        menuBtnRef.addEventListener('click', () => {
+          const expanded =
+            menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+          menuBtnRef.classList.toggle('is-open');
+          menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+          mobileMenuRef.classList.toggle('is-open');
+        });
+      })();
+    </script>
   </body>
 </html>
