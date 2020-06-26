@@ -28,14 +28,27 @@ a {
   margin-right: auto;
 }
 
+.conteiner-examples {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 480px) {
-  .conteiner-examples-works {
-    width: 480px;
+  .conteiner-examples {
+    max-width: 480px;
   }
 }
 
-.conteiner-button ul {
-  list-style-type: none;
+.conteiner-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner-button {
+    max-width: 480px;
+  }
 }
 
 .conteiner-button ul {
@@ -46,6 +59,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .all,
@@ -97,18 +111,8 @@ a {
 }
 
 /*PORTFOLIO*/
-.conteiner-examples {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .conteiner-examples img {
   display: block;
-}
-
-.image-cart {
-  position: relative;
-  overflow: hidden;
 }
 
 .text-overlay {
