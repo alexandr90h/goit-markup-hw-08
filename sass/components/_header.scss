@@ -1,7 +1,12 @@
-// header{
-// }
+header {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
 .conteiner-header {
-      position: relative;
+  position: relative;
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -15,7 +20,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $text-white-color;
-  border-top: 1px solid #ECECEC;
+  border-top: 1px solid #ececec;
   display: none;
   &.is-open {
     display: block;

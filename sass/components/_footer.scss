@@ -1,8 +1,12 @@
 footer {
   background-color: #2f303a;
+}
+.conteiner-footer {
   padding: 60px 15px;
-  a {
-    color: $text-white-color;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 }
 .logo-footer {

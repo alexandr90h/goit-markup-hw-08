@@ -18,6 +18,17 @@ a {
   text-decoration: none;
 }
 
+header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    width: 480px;
+  }
+}
+
 .conteiner-header {
   position: relative;
   padding: 10px 15px;
@@ -40,7 +51,7 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #ffffff;
-  border-top: 1px solid #ECECEC;
+  border-top: 1px solid #ececec;
   display: none;
 }
 
@@ -472,6 +483,12 @@ a {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .conteiner-features {
+    width: 480px;
+  }
+}
+
 .conteiner-features ul {
   margin: 0;
   padding: 0;
@@ -528,11 +545,22 @@ a {
 
 .team-section {
   background-color: #f5f4fa;
-  margin: 0;
+}
+
+.conteiner-team {
+  display: block;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner-team {
+    width: 480px;
+  }
 }
 
 .team-section ul {
@@ -638,8 +666,16 @@ a {
   letter-spacing: 0.03em;
 }
 
-.client-section {
+.conteiner-client {
   padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner-client {
+    width: 480px;
+  }
 }
 
 .client-title {
@@ -698,11 +734,18 @@ a {
 
 footer {
   background-color: #2f303a;
-  padding: 60px 15px;
 }
 
-footer a {
-  color: #ffffff;
+.conteiner-footer {
+  padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner-footer {
+    width: 480px;
+  }
 }
 
 .logo-footer {
