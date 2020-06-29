@@ -3,26 +3,30 @@
   padding: 60px 15px;
   border-top: 1px solid #ececec;
 }
-.conteiner-examples-works {
-  margin-left: auto;
-  margin-right: auto;
-}
+// .conteiner-examples-works {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 .conteiner-examples {
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
 }
 
 .conteiner-button {
-  //   width: 630px;
-  //   height: 54px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
 }
 .conteiner-button ul {
@@ -31,6 +35,9 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .all,
 .all-site,
@@ -76,10 +83,10 @@
 .conteiner-examples img {
   display: block;
 }
-// .image-cart {
-//   position: relative;
-//   overflow: hidden;
-// }
+.image-cart {
+  position: relative;
+  overflow: hidden;
+}
 .text-overlay {
   position: absolute;
   left: 0;
@@ -113,6 +120,11 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .conteiner-examples li {
   // width: 370px;
@@ -126,6 +138,13 @@
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin: 15px;
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
 }
 .conteiner-examples h2 {
   margin: 0;
@@ -133,6 +152,9 @@
   color: $primary-text-color;
   @include main-font(700, 18px, 2);
   letter-spacing: 0.03em;
+  @media screen and (min-width: 768px) {
+    white-space: nowrap;
+  }
 }
 .conteiner-examples p {
   margin: 0;

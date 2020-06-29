@@ -5,13 +5,26 @@
   @media screen and (min-width: 480px) {
     width: 480px;
   }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 }
 .conteiner-features ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
-
+.conteiner-features li {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(((100%-30px) - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
 .conteiner-features svg {
   width: 70px;
   height: 70px;
@@ -25,6 +38,9 @@
 }
 .features-section li:not(:first-child) {
   margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
 }
 .features-section h2 {
   margin-top: 30px;
