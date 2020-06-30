@@ -42,12 +42,10 @@ header {
     left: 0;
     border: none;
     padding: 0;
-    // width: auto;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
-    // width: 100%;
   }
   &.is-open {
     display: block;
@@ -200,6 +198,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     margin-left: 0;
+    @include main-font(500, 14px, 1.17);
   }
 }
 .contacts-list li {

@@ -10,12 +10,21 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 94px 15px;
+  }
 }
 .client-title {
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
-  @include main-font(bold, 28, 1.17);
+  @include main-font(bold, 28px, 1.17);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+      @include main-font(bold, 42px, 1.17);
+
+  }
 }
 .client-section ul {
   display: flex;
@@ -23,6 +32,9 @@
   padding: 0;
   margin: -15px;
   list-style: none;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 .client-item {
   flex-basis: calc(((100%-30px) - 4 * 15px) / 2);
@@ -40,6 +52,10 @@
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc(((100%-30px) - 6 * 15px) / 3);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(((100%-30px) - 12 * 15px) / 6);
     margin: 15px;
   }
 }

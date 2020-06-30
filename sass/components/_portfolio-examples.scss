@@ -1,25 +1,28 @@
-.examples-works {
-  // align-items: center;
-  padding: 60px 15px;
+.section-examples-works {
   border-top: 1px solid #ececec;
 }
-// .conteiner-examples-works {
-//   margin-left: auto;
-//   margin-right: auto;
-// }
 .conteiner-examples {
+  display: block;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
 }
 
 .conteiner-button {
   display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 480px) {
@@ -27,6 +30,9 @@
   }
   @media screen and (min-width: 768px) {
     width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 .conteiner-button ul {
@@ -82,6 +88,7 @@
 /*PORTFOLIO*/
 .conteiner-examples img {
   display: block;
+  max-width: 100%;
 }
 .image-cart {
   position: relative;

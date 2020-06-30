@@ -18,30 +18,89 @@ a {
   outline-offset: 0;
 }
 
-.examples-works {
-  padding: 60px 15px;
+.studio-link {
+  display: block;
+  margin-bottom: 50px;
+  color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .studio-link {
+    margin: 0;
+  }
+}
+
+.portfolio-activ {
+  position: relative;
+  display: block;
+  margin-bottom: 40px;
+  color: #2196f3;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-activ::after {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-activ {
+    margin: 0;
+  }
+  .portfolio-activ::after {
+    bottom: -24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-activ::after {
+    bottom: -30px;
+  }
+}
+
+.section-examples-works {
   border-top: 1px solid #ececec;
 }
 
 .conteiner-examples {
+  display: block;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .conteiner-examples {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner-examples {
-    width: 768px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner-examples {
+    max-width: 1200px;
   }
 }
 
 .conteiner-button {
   display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -55,6 +114,12 @@ a {
 @media screen and (min-width: 768px) {
   .conteiner-button {
     width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner-button {
+    width: 1200px;
   }
 }
 
@@ -128,6 +193,7 @@ a {
 /*PORTFOLIO*/
 .conteiner-examples img {
   display: block;
+  max-width: 100%;
 }
 
 .image-cart {

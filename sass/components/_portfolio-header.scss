@@ -1,3 +1,41 @@
+.studio-link {
+  display: block;
+  margin-bottom: 50px;
+  color: $primary-text-color;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+.portfolio-activ {
+  position: relative;
+  display: block;
+  margin-bottom: 40px;
+  color: $activ-color;
+  transition: $main-transition;
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $activ-color;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    &::after {
+      bottom: -24px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &::after {
+      bottom: -30px;
+    }
+  }
+}
+
 // .studio-link {
 //   display: block;
 //   padding-top: 32px;
