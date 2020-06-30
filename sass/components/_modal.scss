@@ -16,16 +16,17 @@
 }
 .modal {
   position: relative;
-  // top: 93px;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  // max-width: 450px;
   padding: 40px;
   background-color: $text-white-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
 }
 .close-button {
   position: absolute;

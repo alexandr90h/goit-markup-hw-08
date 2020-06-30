@@ -7,6 +7,9 @@ header {
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .conteiner-header {
   position: relative;
@@ -17,6 +20,9 @@ header {
   @media screen and (min-width: 768px) {
     position: static;
     justify-content: start;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 24px 15px;
   }
 }
 .navigation {
@@ -36,7 +42,12 @@ header {
     left: 0;
     border: none;
     padding: 0;
-    width: auto;
+    // width: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+    // width: 100%;
   }
   &.is-open {
     display: block;
@@ -49,8 +60,12 @@ header {
   font-weight: bold;
   font-size: 24px;
   line-height: 1.17;
+  white-space: nowrap;
   @media screen and (min-width: 768px) {
     margin-right: 81px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 85px;
   }
 }
 .logo-web {
@@ -89,7 +104,7 @@ header {
   @media screen and (min-width: 768px) {
     flex-direction: row;
     @include main-font(500, 14px, 1.14);
-    & li:not(:first-child){
+    & li:not(:first-child) {
       margin-left: 50px;
     }
   }
@@ -116,9 +131,14 @@ header {
   }
   @media screen and (min-width: 768px) {
     margin: 0;
-      &::after {
-            bottom: -24px;
-      }
+    &::after {
+      bottom: -24px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &::after {
+      bottom: -30px;
+    }
   }
 }
 .portfolio {
@@ -144,9 +164,10 @@ header {
   // display: flex;
   // padding-top: 32px;
   // padding-bottom: 32px;
-  align-items: center;
+  // align-items: center;
   color: $secondary-text-color;
   transition: $main-transition;
+  height: 100%;
   &:hover,
   &:focus {
     color: $activ-color;
@@ -170,10 +191,16 @@ header {
   list-style-type: none;
   @include main-font(500, 12px, 1.17);
   letter-spacing: 0.02em;
-    @media screen and (min-width: 768px) {
-      justify-content: start;
-      margin-left: 84px;
-    }
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
+  }
 }
 .contacts-list li {
   display: block;
@@ -182,11 +209,16 @@ header {
   &:not(:last-child) {
     margin-bottom: 16px;
   }
-      @media screen and (min-width: 768px) {
-        margin: 0;
-          &:not(:last-child) {
-    margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
-
-      }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
 }
