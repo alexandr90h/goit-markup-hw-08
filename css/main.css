@@ -883,10 +883,79 @@ header {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 1600px) {
+.activity-section {
+  background-color: #ffffff;
+  padding-top: 34px;
+  padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
   .activity-section {
     display: none;
   }
+}
+
+.conteiner-activity {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.conteiner-activity img {
+  display: block;
+  width: 370px;
+  border-radius: 4px;
+}
+
+.conteiner-activity ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.activity-section li {
+  position: relative;
+}
+
+.activity-section li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.activity-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #212121;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.activity-section h3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-radius: 0 0 4px 4px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .team-section {
@@ -998,9 +1067,25 @@ header {
   }
 }
 
+.image-box {
+  display: block;
+  height: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-box {
+    height: 260px;
+  }
+}
+
 .team-item img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .team-item ul {
