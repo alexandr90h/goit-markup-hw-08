@@ -79,6 +79,7 @@ header {
   padding-bottom: 60px;
   background-color: #ffffff;
   border-top: 1px solid #ececec;
+  z-index: 1;
   display: none;
 }
 
@@ -104,6 +105,7 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    z-index: 0;
   }
 }
 
@@ -309,7 +311,7 @@ header {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
@@ -320,6 +322,11 @@ header {
         -ms-flex-pack: start;
             justify-content: start;
     margin-left: 84px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 

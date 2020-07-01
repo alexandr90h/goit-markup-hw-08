@@ -80,18 +80,23 @@ a {
 @media screen and (min-width: 480px) {
   .conteiner-examples {
     max-width: 480px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner-examples {
     max-width: 768px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner-examples {
     max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 94px;
   }
 }
 
