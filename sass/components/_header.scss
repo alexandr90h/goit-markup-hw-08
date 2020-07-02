@@ -1,25 +1,25 @@
 header {
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
 .conteiner-header {
-  position: relative;
-  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
   @media screen and (min-width: 768px) {
-    position: static;
-    justify-content: start;
+    // position: static;
+    max-width: 768px;
   }
   @media screen and (min-width: 1200px) {
     padding: 24px 15px;
@@ -27,21 +27,20 @@ header {
 }
 .navigation {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 1px);
   left: 0;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $text-white-color;
-  border-top: 1px solid #ececec;
   z-index: 1;
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
+    width: auto;
     position: static;
     top: 0;
     left: 0;
-    border: none;
     padding: 0;
   }
   @media screen and (min-width: 1200px) {
@@ -62,10 +61,8 @@ header {
   line-height: 1.17;
   white-space: nowrap;
   @media screen and (min-width: 768px) {
-    margin-right: 81px;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 85px;
   }
 }
 .logo-web {
@@ -98,13 +95,19 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0px;
+  margin-bottom: 60px;
   padding: 0px;
   list-style-type: none;
   @include main-font(500, 18px, 1.17);
+  & li:not(:first-child) {
+    margin-top: 50px;
+  }
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    margin-bottom: 0;
     @include main-font(500, 14px, 1.14);
     & li:not(:first-child) {
+      margin: 0;
       margin-left: 50px;
     }
   }
@@ -116,7 +119,6 @@ header {
 .studio-link-activ {
   position: relative;
   display: block;
-  margin-bottom: 50px;
   color: $activ-color;
   &::after {
     position: absolute;
@@ -132,7 +134,7 @@ header {
   @media screen and (min-width: 768px) {
     margin: 0;
     &::after {
-      bottom: -24px;
+      bottom: -25px;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -143,7 +145,6 @@ header {
 }
 .portfolio {
   display: block;
-  margin-bottom: 40px;
   color: $primary-text-color;
   transition: $main-transition;
   @media screen and (min-width: 768px) {
@@ -152,7 +153,6 @@ header {
 }
 .contacts {
   display: block;
-  margin-bottom: 60px;
   color: $primary-text-color;
   transition: $main-transition;
   @media screen and (min-width: 768px) {
@@ -161,10 +161,6 @@ header {
 }
 .contacts-list a {
   display: block;
-  // display: flex;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  // align-items: center;
   color: $secondary-text-color;
   transition: $main-transition;
   height: 100%;
