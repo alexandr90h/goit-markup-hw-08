@@ -1,6 +1,5 @@
 .studio-link {
   display: block;
-  margin-bottom: 50px;
   color: $primary-text-color;
   @media screen and (min-width: 768px) {
     margin: 0;
@@ -9,7 +8,6 @@
 .portfolio-activ {
   position: relative;
   display: block;
-  margin-bottom: 40px;
   color: $activ-color;
   transition: $main-transition;
   &::after {

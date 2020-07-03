@@ -20,7 +20,6 @@ a {
 
 .studio-link {
   display: block;
-  margin-bottom: 50px;
   color: #212121;
 }
 
@@ -33,7 +32,6 @@ a {
 .portfolio-activ {
   position: relative;
   display: block;
-  margin-bottom: 40px;
   color: #2196f3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,64 +65,58 @@ a {
 }
 
 .section-examples-works {
-  border-top: 1px solid #ececec;
+  padding: 0 15px;
+}
+
+.conteiner-button {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner-button {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner-button {
+    max-width: 768px;
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner-button {
+    max-width: 1200px;
+  }
 }
 
 .conteiner-examples {
-  display: block;
-  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
   .conteiner-examples {
     max-width: 480px;
-    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner-examples {
     max-width: 768px;
-    padding-bottom: 60px;
+    padding-bottom: 94px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner-examples {
     max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 94px;
-  }
-}
-
-.conteiner-button {
-  display: block;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .conteiner-button {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .conteiner-button {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .conteiner-button {
-    width: 1200px;
   }
 }
 
@@ -137,6 +129,12 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner-button ul {
+    margin: -8px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -154,8 +152,6 @@ a {
 .marketing {
   height: 38px;
   padding: 6px 22px;
-  margin-bottom: 21px;
-  margin-right: 8px;
   border-radius: 4px;
   border: 1px solid #f5f4fa;
   background: #f5f4fa;
@@ -169,6 +165,16 @@ a {
   letter-spacing: 0.03em;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .all,
+  .all-site,
+  .app,
+  .design,
+  .marketing {
+    margin: 8px;
+  }
 }
 
 .all:hover,
@@ -198,7 +204,11 @@ a {
 /*PORTFOLIO*/
 .conteiner-examples img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+}
+
+.conteiner-examples a {
+  color: #ffffff;
 }
 
 .image-cart {
@@ -212,14 +222,12 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   margin: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   font-family: Roboto;
@@ -236,6 +244,12 @@ a {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .text-overlay {
+    padding: 49px 24px;
+  }
 }
 
 .content-cart {
@@ -302,16 +316,5 @@ a {
   .conteiner-examples h2 {
     white-space: nowrap;
   }
-}
-
-.conteiner-examples p {
-  margin: 0;
-  color: #757575;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=portfolio.css.map */

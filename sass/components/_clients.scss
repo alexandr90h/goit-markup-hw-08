@@ -1,18 +1,20 @@
-// .client-section {
-// }
-.conteiner-client {
+.client-section {
   padding: 60px 15px;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 15px;
+  }
+}
+.conteiner-client {
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding: 94px 15px;
+    max-width: 1200px;
   }
 }
 .client-title {
@@ -22,8 +24,7 @@
   @include main-font(bold, 28px, 1.17);
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
-      @include main-font(bold, 42px, 1.17);
-
+    @include main-font(bold, 42px, 1.17);
   }
 }
 .client-section ul {
