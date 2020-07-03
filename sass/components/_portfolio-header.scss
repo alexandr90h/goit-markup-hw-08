@@ -24,12 +24,12 @@
   @media screen and (min-width: 768px) {
     margin: 0;
     &::after {
-      bottom: -24px;
+      bottom: -25px;
     }
   }
   @media screen and (min-width: 1200px) {
     &::after {
-      bottom: -30px;
+      bottom: -31px;
     }
   }
 }

@@ -1,7 +1,6 @@
 .section-examples-works {
   padding: 0 15px;
 }
-
 .conteiner-button {
   margin-left: auto;
   margin-right: auto;
@@ -41,9 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  @media screen and (min-width: 480px) {
     margin: -8px;
-  }
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
@@ -65,9 +62,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 480px) {
     margin: 8px;
-  }
 }
 .all:hover,
 .all-site:hover,
@@ -95,6 +90,9 @@
 .conteiner-examples img{
   display: block;
   width: 100%;
+  height: 294px;
+  object-fit: cover;
+  object-position: top;
 }
 .conteiner-examples a {
   color: $text-white-color;
@@ -171,9 +169,9 @@
     white-space: nowrap;
   }
 }
-// .conteiner-examples p {
-//   margin: 0;
-//   color: $secondary-text-color;
-//   @include main-font(normal, 16px, 1.87);
-//   letter-spacing: 0.03em;
-// }
+.content-cart p {
+  margin: 0;
+  color: $secondary-text-color;
+  @include main-font(normal, 16px, 1.87);
+  letter-spacing: 0.03em;
+}
