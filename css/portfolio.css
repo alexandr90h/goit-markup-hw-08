@@ -65,14 +65,20 @@ a {
 }
 
 .section-examples-works {
-  padding: 0 15px;
+  padding: 60px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-examples-works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .conteiner-button {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 480px) {
@@ -84,21 +90,20 @@ a {
 @media screen and (min-width: 768px) {
   .conteiner-button {
     max-width: 768px;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner-button {
     max-width: 1200px;
+    margin-bottom: 50px;
   }
 }
 
 .conteiner-examples {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -110,7 +115,6 @@ a {
 @media screen and (min-width: 768px) {
   .conteiner-examples {
     max-width: 768px;
-    padding-bottom: 94px;
   }
 }
 
@@ -129,7 +133,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
-  margin: -8px;
+  margin: -4px;
 }
 
 @media screen and (min-width: 768px) {
@@ -138,6 +142,10 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.conteiner-button li {
+  margin: 4px;
 }
 
 .all,
@@ -160,7 +168,6 @@ a {
   letter-spacing: 0.03em;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 8px;
 }
 
 .all:hover,
